@@ -11,11 +11,8 @@ function sendForbiddenMessage(message)
 				</div>
 				]],
 			})
-		else if Config.Chat == "basic" then
-			TriggerEvent("chatMessage", "", {0, 0, 0}, "^1" .. message)
-		else
-			print ("WRONG CHAT SETTINGS!!!!")
-		end
+		else 
+		TriggerEvent("chatMessage", "", {0, 0, 0}, "^1" .. message)
 	end
 end
 
